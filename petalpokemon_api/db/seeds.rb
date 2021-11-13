@@ -20,6 +20,6 @@ csv.each do |row|
     p.speedDefense = row['Sp. Def']
     p.speed = row['Speed']
     p.generation = row['Generation']
-    p.lengendary = row['Legendary']
+    p.lengendary = row['Legendary'] == "True" ? true : false
     p.save
 end
