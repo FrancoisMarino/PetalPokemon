@@ -10,10 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_13_165508) do
+ActiveRecord::Schema.define(version: 2021_11_13_194043) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
+    t.integer "type1"
+    t.integer "type2"
     t.integer "HP"
     t.integer "attack"
     t.integer "defense"
@@ -24,8 +26,6 @@ ActiveRecord::Schema.define(version: 2021_11_13_165508) do
     t.boolean "lengendary"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "type1", default: 0
-    t.integer "type2", default: 0
   end
 
 end

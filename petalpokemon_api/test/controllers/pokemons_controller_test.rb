@@ -12,7 +12,7 @@ class PokemonsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pokemon" do
     assert_difference('Pokemon.count') do
-      post pokemons_url, params: { pokemon: { HP: @pokemon.HP, attack: @pokemon.attack, defense: @pokemon.defense, generation: @pokemon.generation, lengendary: @pokemon.lengendary, name: @pokemon.name, speed: @pokemon.speed, speedAttack: @pokemon.speedAttack, speedDefense: @pokemon.speedDefense } }, as: :json
+      post pokemons_url, params: { pokemon: { HP: @pokemon.HP, attack: @pokemon.attack, defense: @pokemon.defense, generation: @pokemon.generation, lengendary: @pokemon.lengendary, name: @pokemon.name, speed: @pokemon.speed, speedAttack: @pokemon.speedAttack, speedDefense: @pokemon.speedDefense, type1: @pokemon.type1, type2: @pokemon.type2 } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class PokemonsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pokemon" do
-    patch pokemon_url(@pokemon), params: { pokemon: { HP: @pokemon.HP, attack: @pokemon.attack, defense: @pokemon.defense, generation: @pokemon.generation, lengendary: @pokemon.lengendary, name: @pokemon.name, speed: @pokemon.speed, speedAttack: @pokemon.speedAttack, speedDefense: @pokemon.speedDefense } }, as: :json
+    patch pokemon_url(@pokemon), params: { pokemon: { HP: @pokemon.HP, attack: @pokemon.attack, defense: @pokemon.defense, generation: @pokemon.generation, lengendary: @pokemon.lengendary, name: @pokemon.name, speed: @pokemon.speed, speedAttack: @pokemon.speedAttack, speedDefense: @pokemon.speedDefense, type1: @pokemon.type1, type2: @pokemon.type2 } }, as: :json
     assert_response 200
   end
 

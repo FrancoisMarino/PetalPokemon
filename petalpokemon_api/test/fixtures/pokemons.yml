@@ -10,6 +10,8 @@ one:
   speed: 1
   generation: 1
   lengendary: false
+  type1: 1
+  type2: 1
 
 two:
   name: MyString
@@ -21,3 +23,5 @@ two:
   speed: 1
   generation: 1
   lengendary: false
+  type1: 1
+  type2: 1
