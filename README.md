@@ -1,6 +1,7 @@
 # PetalPokemon
 
-## To start the project 
+## Backend (Ruby on rails)
+Open the project inside petalpokemon_api folder
 run the following commands:
 >rails db:migrate
 
@@ -21,3 +22,7 @@ Json example:
 Json example
 {"name":"newName"}
 - Delete a pokemon: DELETE http://localhost:3000/api/v1/pokemons/{pokemon_id}
+
+## Frontend (react)
+Open the project petalpokemon_web and run 
+>npm start
