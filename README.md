@@ -3,6 +3,7 @@
 ## To start the project 
 run the following commands:
 >rails db:migrate
+
 >rails db:seed
 
 The CVS file will be read and use to populate the database 
