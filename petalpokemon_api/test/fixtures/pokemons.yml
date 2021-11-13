@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  HP: 1
+  attack: 1
+  defense: 1
+  speedAttack: 1
+  speedDefense: 1
+  speed: 1
+  generation: 1
+  lengendary: false
+
+two:
+  name: MyString
+  HP: 1
+  attack: 1
+  defense: 1
+  speedAttack: 1
+  speedDefense: 1
+  speed: 1
+  generation: 1
+  lengendary: false
